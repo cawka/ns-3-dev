@@ -27,6 +27,7 @@
 #include <list>
 #include "ns3/object.h"
 #include "ns3/node.h"
+#include "ns3/simple-ref-count.h"
 
 
 /**
@@ -47,7 +48,7 @@ class NodeContainer;
  * This interface perform the shared tasks among all possible input file readers.
  * Each different file format is handled by its own topology reader.
  */
-class TopologyReader : public Object
+class TopologyReader : public SimpleRefCount<TopologyReader>
 {
 
 public:
@@ -159,12 +160,6 @@ private:
    * \brief Constant iterator to the list of the links.
    */
   typedef std::list< Link >::const_iterator ConstLinksIterator;
-
-  /**
-   * \brief Get the type ID.
-   * \return The object TypeId.
-   */
-  static TypeId GetTypeId (void);
 
   TopologyReader ();
   virtual ~TopologyReader ();
