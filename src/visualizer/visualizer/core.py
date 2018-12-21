@@ -1369,6 +1369,11 @@ class Visualizer(GObject.GObject):
                                      alignment=Pango.Alignment.CENTER,
                                      anchor=GooCanvas.CanvasAnchorType.N,
                                      x=0, y=line_width/2)
+                if angle < -PI_OVER_2:
+                    angle += math.pi
+                else:
+                    angle -= math.pi
+
             M = cairo.Matrix()
             lx, ly = self._get_label_over_line_position(pos1_x, pos1_y,
                                                         pos2_x, pos2_y)
