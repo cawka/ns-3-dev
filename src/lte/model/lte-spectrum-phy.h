@@ -500,7 +500,7 @@ public:
   * \return true if an error occurred and the transmission was not
   * started, false otherwise.
   */
-  bool StartTxSlMibFrame (Ptr<PacketBurst> pb, std::list<Ptr<LteControlMessage> > ctrlMsgList, Time duration);
+  // bool StartTxSlMibFrame (Ptr<PacketBurst> pb, std::list<Ptr<LteControlMessage> > ctrlMsgList, Time duration);
 
 
   /**

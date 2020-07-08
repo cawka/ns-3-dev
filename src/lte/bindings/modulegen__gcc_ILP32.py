@@ -39143,9 +39143,9 @@ def register_Ns3LteSpectrumPhy_methods(root_module, cls):
                    'bool', 
                    [param('ns3::Ptr< ns3::PacketBurst >', 'pb'), param('uint32_t', 'resNo'), param('uint8_t', 'rv'), param('ns3::Time', 'duration')])
     ## lte-spectrum-phy.h (module 'lte'): bool ns3::LteSpectrumPhy::StartTxSlMibFrame(ns3::Ptr<ns3::PacketBurst> pb, std::list<ns3::Ptr<ns3::LteControlMessage>, std::allocator<ns3::Ptr<ns3::LteControlMessage> > > ctrlMsgList, ns3::Time duration) [member function]
-    cls.add_method('StartTxSlMibFrame', 
-                   'bool', 
-                   [param('ns3::Ptr< ns3::PacketBurst >', 'pb'), param('std::list< ns3::Ptr< ns3::LteControlMessage > >', 'ctrlMsgList'), param('ns3::Time', 'duration')])
+    # cls.add_method('StartTxSlMibFrame', 
+    #                'bool', 
+    #                [param('ns3::Ptr< ns3::PacketBurst >', 'pb'), param('std::list< ns3::Ptr< ns3::LteControlMessage > >', 'ctrlMsgList'), param('ns3::Time', 'duration')])
     ## lte-spectrum-phy.h (module 'lte'): bool ns3::LteSpectrumPhy::StartTxDlCtrlFrame(std::list<ns3::Ptr<ns3::LteControlMessage>, std::allocator<ns3::Ptr<ns3::LteControlMessage> > > ctrlMsgList, bool pss) [member function]
     cls.add_method('StartTxDlCtrlFrame', 
                    'bool', 
